@@ -13,9 +13,7 @@ export function personUpdate(data) {
             delete data.age;
             break;
         case 'male':
-            if (!!data.income) {
-                null;
-            } else {
+            if (!data.income) {
                 data.income = 100000;
             }
             break;
